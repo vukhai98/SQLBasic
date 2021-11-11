@@ -1,3 +1,4 @@
+use TEDU
 create table Customers
 ( 
 	CustomerId int primary key,
@@ -11,7 +12,17 @@ create table Customers
 go
 
 insert into Customers values(1,'Alfreds Futterkiste','Maria Anders','Obere Str.57','Berlin','12209','Germany');
-insert into Customers values(2,'Ana Trujillo Emparedados y helados','Avda.de la Constitucion 2222','Mexico D.F','05021','Mexico');
+insert into Customers values(2,'Ana Trujillo Emparedados y helados','Ana Trujillo','Avda.de la Constitucion 2222','Mexico D.F','05021','Mexico');
 insert into Customers values(3,'Antonio Moreno Taquería','Antonio Moreno','Mataderos 2312','Mexico D.F','05023','Mexico');
 insert into Customers values(4,'Around the Horn','Thomas Hardy','120 Hanover Sq.','London','WA1 1DP','UK');
 insert into Customers values(5,'Berlunds snabbkop','Christina Berglung','Berguvsvagen 8','Lulea','S-958 22','Sweden');
+ 
+select * from Customers
+-- select distinct
+select distinct Contry from Customers
+-- select top
+select * from Customers
+select top 2 ContactName From Customers where Contry  = 'Mexico'
+
+
+
