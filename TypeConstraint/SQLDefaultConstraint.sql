@@ -17,7 +17,7 @@ add constraint DF_Persons_City Default 'Sandnes' For City
 drop table Orderes
 create table Orderes
 (
-	ID int NOT NULL,
+	--ID int NOT NULL,
 	OrderNumber int NOT NULL,
 	OrderDate date
 )
